@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>services</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/">
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="../css/sevices.css" rel="stylesheet">
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/>
+  </symbol>
+  <symbol id="cart" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+  <symbol id="chevron-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+  </symbol>
+</svg>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #fb9403;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html">Taxi</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../views/singin.html">Sing in</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../views/contactos.html">Send WhatsApp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../views/nosotros.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+<main>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+      <h1 class="display-3 fw-bold">Servio de trasporte profecional</h1>
+      <h3 class="fw-normal text-muted mb-3">contactame y descubre mas sobre nuestros Servicios</h3>
+      <div class="d-flex gap-3 justify-content-center lead fw-normal">
+        <a class="icon-link" href="../index.html">
+          Learn more
+          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+        </a>
+        <a class="icon-link" href="../index.html">
+          Buy
+          <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block">
+      <img src="../resourses/images/500-500/4.png" alt="Descripción de la imagen" class="img-fluid">
+    </div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block">
+      <img src="../resourses/images/500-500/5.png" alt="Descripción de la imagen" class="img-fluid">
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Eficaz</h2>
+        <p class="lead">Tu ubicacion siempre a mano</p>
+      </div>
+      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15944.984698182237!2d-79.36063431284177!3d-2.4247002999999925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91cd557bd0081ce9%3A0x44462ad4c70a0bc8!2sCoop%20De%20Taxi%209%20De%20Noviembre!5e0!3m2!1ses-419!2sec!4v1707164059774!5m2!1ses-419!2sec" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Economico</h2>
+        <p class="lead">Nuestra tarifa es la mejor del mercado</p>
+      </div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="data:image/jpeg;base64,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" alt="alternativa" width="100%" height="100%">
+        </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">A tiempo</h2>
+        <p class="lead">Sin retrazo siempre a tiempo</p>
+      </div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/w0O1GwHtgW0?si=RsT0VgEWLqX4M3ww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      
+      </div>
+    </div>
+    <div class="text-bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Seguro</h2>
+        <p class="lead">La seguridad es nuestra prioridad</p>
+      </div>
+      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="../resourses/images/500-500/6.png" alt="Descripción de la imagen" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Confort</h2>
+        <p class="lead">Tu comodidad nos complace</p>
+      </div>
+      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="../resourses/images/carrousel/3.gif" alt="Descripción de la imagen" class="img-fluid">
+      </div>
+    </div>
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Elegancia</h2>
+        <p class="lead">Mejor atencion al usuario</p>
+      </div>
+      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="../resourses/images/carrousel/2.gif" alt="Descripción de la imagen" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Tu Ritmo</h2>
+        <p class="lead">Estamos a tu disposicion.</p>
+      </div>
+      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="../resourses/images/carrousel/1.png" alt="Descripción de la imagen" class="img-fluid">
+      </div>
+    </div>
+    <div class="bg-body-tertiary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Mas facil</h2>
+        <p class="lead">Facilitamos tu transporte</p>
+      </div>
+      <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <img src="../resourses/images/500-500/5.png" alt="Descripción de la imagen" class="img-fluid"></div>
+    </div>
+  </div>
+</main>
+
+  <!-- FOOTER -->
+  <div class="container" style="background-color: #fb9403;">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Home</a></li>
+            <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Features</a></li>
+            <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address"
+                style="background-color: black; color: white;">
+              <button class="btn btn-primary" type="button" style="background-color: #198754;">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2022 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="../resourses/icons/bootstrap-icons.svg#twitter"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="../resourses/icons/bootstrap-icons.svg#instagram"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="../resourses/icons/bootstrap-icons.svg#facebook"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+    </footer>
+<script src="../js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>

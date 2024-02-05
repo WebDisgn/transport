@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <!-- api key -->
+<!-- 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 -->
+<!-- org-VDoQFwI2RUBA24SqwVcRr1Bu -->
+<head>
+  <script src="./js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.118.2">
+  <title>Servicio de taxi</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+  <link href="./css/bootstrap.min.css" crossorigin="anonymous" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/index.css">
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/carousel.css" rel="stylesheet">
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="check2" viewBox="0 0 16 16">
+      <path
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+    </symbol>
+    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+      <path
+        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+      <path
+        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+    </symbol>
+    <symbol id="sun-fill" viewBox="0 0 16 16">
+      <path
+        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+    </symbol>
+  </svg>
+
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+      aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+      <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+        <use href="#circle-half"></use>
+      </svg>
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#sun-fill"></use>
+          </svg>
+          Light
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+          aria-pressed="false">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#moon-stars-fill"></use>
+          </svg>
+          Dark
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+          aria-pressed="true">
+          <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+            <use href="#circle-half"></use>
+          </svg>
+          Auto
+          <svg class="bi ms-auto d-none" width="1em" height="1em">
+            <use href="#check2"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #fb9403;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Taxi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./views/singin.html">Sing in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./views/contactos.html">Send WhatsApp</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./views/nosotros.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#fb9403" />
+            <image href="./resourses/images/carrousel/1.png" width="100%" style="object-fit: cover; height: 100%;" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>"Rápido y Confiável":</h1>
+              <p class="opacity-75">¡Viaja con comodidad y seguridad! Nuestro servicio de taxi te lleva a tu destino rápidamente, brindándote una experiencia de viaje confiable.</p>
+              <p><a class="btn btn-lg btn-primary" href="https://wa.me/593994643213" style="background-color: #198754;">WhatsApp</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <!-- Rectángulo con fondo amarillo -->
+            <rect width="100%" height="100%" fill="#fb9403" />
+
+            <!-- Imagen con object-fit: cover y height: 100% -->
+            <image href="./resourses/images/carrousel/2.gif" width="100%" style="object-fit: cover; height: 100%;" />
+          </svg>
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>"Tu Conexión Directa":</h1>
+              <p>Convierte cada viaje en una experiencia sin complicaciones. Nuestro servicio de taxi te ofrece tu conexión directa a cualquier lugar, con conductores amigables y tarifas transparentes.</p>
+              <p><a class="btn btn-lg btn-primary" style="background-color: #198754;" href="https://wa.me/593994643213">WhatsApp</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#fb9403" />
+
+            <image href="./resourses/images/carrousel/3.gif" width="100%" style="object-fit: cover; height: 100%;" />
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>"Siempre a Tiempo":</h1>
+              <p>Opta por la puntualidad con nuestro servicio de taxi. Siempre a tiempo para llevarte donde necesitas estar, ofrecemos un viaje eficiente y sin estrés, con capacidad para hasta tres pasajeros.</p>
+              <p><a class="btn btn-lg btn-primary" style="background-color: #198754;" href="https://wa.me/593994643213">WhatsApp</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#fb9403" />
+            <image href="./resourses/images/150-150/3.png" width="100%" style="object-fit: cover; height: 100%;" />
+        
+          </svg>
+          <h2 class="fw-normal">Viajes sin Preocupaciones</h2>
+          <p>Explora la ciudad sin preocupaciones con nuestro servicio de taxi. Nosotros nos encargamos del viaje para que tú solo disfrutes.</p>
+          <p><a class="btn btn-secondary" style="background-color: #198754;" href="tel:+593994643213">Call Me &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#fb9403" />
+            <image href="./resourses/images/150-150/1.png" width="100%" style="object-fit: cover; height: 100%;" />
+        
+          </svg>
+          <h2 class="fw-normal">Tu Viaje, Tu Ritmo</h2>
+          <p>Viaja a tu propio ritmo con nuestro servicio de taxi personalizado. Llega a cualquier destino con facilidad y sin complicaciones.</p>
+          <p><a class="btn btn-secondary" style="background-color: #198754;" href="tel:+593994643213">Call Me &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#fb9403" />
+            <image href="./resourses/images/150-150/2.png" width="100%" style="object-fit: cover; height: 100%;" />
+        
+          </svg>
+          <h2 class="fw-normal">Elegancia sobre Ruedas</h2>
+          <p>Experimenta la elegancia en cada viaje. Nuestro servicio de taxi ofrece un transporte exclusivo y cómodo para hacerte sentir especial.<p>
+            <a class="btn btn-secondary" style="background-color: #198754;" href="tel:+593994643213">Call Me &raquo;</a>
+          </p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Seguridad en Cada  <span
+              class="text-body-secondary">Trayecto</span></h2>
+          <p class="lead">Priorizamos tu seguridad en cada trayecto. Con nuestro servicio de taxi, viajarás con tranquilidad, sabiendo que llegaremos a tu destino de manera segura.</p>
+        </div>
+        <div class="col-md-5">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#fb9403" />
+            <text x="50%" y="50%" fill="#fb9403" dy=".3em">500x500</text>
+
+
+            <image href="./resourses/images/500-500/6.png" width="100%" style="object-fit: cover; height: 100%;" />
+          </svg>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Destinos a Tu  <span class="text-body-secondary">Alcance</span></h2>
+          <p class="lead">Con nuestro servicio de taxi, todos tus destinos están a tu alcance. No importa a dónde vayas, te llevamos allí de manera eficiente y sin complicaciones.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#fb9403" />
+            <text x="50%" y="50%" fill="#fb9403" dy=".3em">500x500</text>
+            <rect width="100%" height="100%" fill="#fb9403" />
+
+            <image href="./resourses/images/500-500/5.png" width="100%" style="object-fit: cover; height: 100%;" />
+          </svg>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Confort Personalizado <span
+              class="text-body-secondary">Garantizado</span></h2>
+          <p class="lead">Disfruta de un confort personalizado en cada viaje. Nuestro servicio de taxi se adapta a tus preferencias para asegurar una experiencia de viaje única.</p>
+        </div>
+        <div class="col-md-5">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#fb9403" />
+            <text x="50%" y="50%" fill="#fb9403" dy=".3em">500x500</text>
+            <rect width="100%" height="100%" fill="#fb9403" />
+
+            <image href="./resourses/images/500-500/4.png" width="100%" style="object-fit: cover; height: 100%;" />
+          </svg>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <div class="container" style="background-color: #fb9403;">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="https://wa.me/593994643213" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address"
+                  style="background-color: black; color: white;">
+                <button class="btn btn-primary" type="button" style="background-color: #198754;">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2022 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="./resourses/icons/bootstrap-icons.svg#twitter"></use>
+                </svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="./resourses/icons/bootstrap-icons.svg#instagram"></use>
+                </svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="./resourses/icons/bootstrap-icons.svg#facebook"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </main>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
